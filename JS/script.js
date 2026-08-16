@@ -1,137 +1,37 @@
-/* =====================================================
-   ATTESTATI
-===================================================== */
-
-/*
-    Inserisci qui i tuoi attestati.
-
-    Per ogni attestato puoi modificare:
-
-    titolo  = nome dell'attestato
-    ente    = ente che lo ha rilasciato
-    anno    = anno
-    link    = pagina/PDF da aprire con VISUALIZZA
-*/
-
-const certificates = [
-
-    {
-        titolo: "Certificazione 1",
-        ente: "Nome ente",
-        anno: "2026",
-        link: "#"
-    },
-
-    {
-        titolo: "Certificazione 2",
-        ente: "Nome ente",
-        anno: "2026",
-        link: "#"
-    },
-
-    {
-        titolo: "Certificazione 3",
-        ente: "Nome ente",
-        anno: "2025",
-        link: "#"
-    }
-
+const attestati = [
+  {logo:"CAME",logoClass:"logo-came",titolo:"ANTINTRUSIONE: PROGRAMMAZIONE AVANZATA",ente:"CAME",anno:"2023"},
+  {logo:"CAME",logoClass:"logo-came",titolo:"ACS01: SISTEMA DI CONTROLLO ACCESSI",ente:"CAME",anno:"2023"},
+  {logo:"CAME",logoClass:"logo-came",titolo:"AGT: GAMMA DERIVATI VIDEOCITOFONICI",ente:"CAME",anno:"2023"},
+  {logo:"CAME",logoClass:"logo-came",titolo:"ATI: COMMERCIAL TUTORIAL",ente:"CAME",anno:"2023"},
+  {logo:"Google",logoClass:"logo-google",titolo:"FUNZIONALITÀ PREMIUM AVANZATE PER AMMINISTRATORI IT",ente:"Google",anno:"2022"},
+  {logo:"e-CAMPUS",logoClass:"logo-ecampus",titolo:"eTS eCAMPUS",ente:"eCampus",anno:"2022"},
+  {logo:"ACHIEVEMENT DELL TRAINING",logoClass:"logo-dei",titolo:"ACHIEVEMENT DELL TRAINING",ente:"DEI",anno:"2021"},
+  {logo:"SIEMENS",logoClass:"logo-siemens",titolo:"CERTIFICAZIONE SIEMENS",ente:"Siemens",anno:"2021"}
 ];
 
-
-/* =====================================================
-   CREAZIONE ATTESTATI
-===================================================== */
-
-function createCertificate(certificate) {
-
+const certificates = document.getElementById("certificates");
+if (certificates) {
+  attestati.forEach(a => {
     const card = document.createElement("article");
-
     card.className = "certificate-card";
-
-
-    const title = document.createElement("h3");
-
-    title.textContent = certificate.titolo;
-
-
-    const organization = document.createElement("p");
-
-    organization.textContent = certificate.ente;
-
-
-    const year = document.createElement("span");
-
-    year.className = "certificate-year";
-
-    year.textContent = certificate.anno;
-
-
-    const button = document.createElement("a");
-
-    button.className = "certificate-button";
-
-    button.textContent = "VISUALIZZA";
-
-    button.href = certificate.link;
-
-    button.target = "_blank";
-
-    button.rel = "noopener noreferrer";
-
-
-    card.appendChild(title);
-
-    card.appendChild(organization);
-
-    card.appendChild(year);
-
-    card.appendChild(button);
-
-
-    return card;
+    card.innerHTML = `
+      <div>
+        <div class="certificate-logo ${a.logoClass}">${a.logo}</div>
+        <h3>${a.titolo}</h3>
+        <div class="issuer">${a.ente}</div>
+        <div class="year">${a.anno}</div>
+      </div>
+      <a href="#" class="view" onclick="return false;">Visualizza <span>→</span></a>`;
+    certificates.appendChild(card);
+  });
 }
 
-
-/* =====================================================
-   VISUALIZZAZIONE ATTESTATI
-===================================================== */
-
-function renderCertificates() {
-
-    const container =
-        document.getElementById("certificates");
-
-
-    if (!container) {
-        return;
-    }
-
-
-    container.innerHTML = "";
-
-
-    certificates.forEach(function(certificate) {
-
-        const card =
-            createCertificate(certificate);
-
-        container.appendChild(card);
-
-    });
-
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", e => {
+    e.preventDefault();
+    document.getElementById("formMessage").textContent =
+      "Messaggio pronto per l'invio.";
+    contactForm.reset();
+  });
 }
-
-
-/* =====================================================
-   AVVIO
-===================================================== */
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
-
-        renderCertificates();
-
-    }
-);
