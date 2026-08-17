@@ -1,10 +1,10 @@
 const attestati = [
   //CAME
   {
-    logo: "CAME",
+    logo: '<img src="../IMMAGINI/CAME_logo.png" alt="CAME">',
     logoClass: "logo-came",
-    titolo: "ANTINTRUSIONE: PROGRAMMAZIONE AVANZATA",
-    ente: "CAME",
+    titolo: "TEST",
+    ente: "CAME Spa",
     anno: "2023",
     link: "https://drive.google.com/"
   },
@@ -17,27 +17,9 @@ const attestati = [
     anno: "2023",
     link: "https://drive.google.com/"
   },
-
-  {
-    logo: "CAME",
-    logoClass: "logo-came",
-    titolo: "AGT: GAMMA DERIVATI VIDEOCITOFONICI",
-    ente: "CAME",
-    anno: "2023",
-    link: "https://drive.google.com/"
-  },
-
-  {
-    logo: "CAME",
-    logoClass: "logo-came",
-    titolo: "ATI: COMMERCIAL TUTORIAL",
-    ente: "CAME",
-    anno: "2023",
-    link: "https://drive.google.com/"
-  },
 //GOOGLE
   {
-    logo: "Google",
+    logo: '<img src="../IMMAGINI/Goolge_logo.svg.webp" alt="KNX">',
     logoClass: "logo-google",
     titolo: "Funzionalità premium avanzate per amministratori IT",
     ente: "Google",
@@ -46,7 +28,7 @@ const attestati = [
   },
 
   {
-    logo: "Google",
+    logo: '<img src="../IMMAGINI/Goolge_logo.svg.webp" alt="KNX">',
     logoClass: "logo-google",
     titolo: "Fundamentals of digital marketing",
     ente: "Google",
@@ -55,7 +37,7 @@ const attestati = [
   },
 //KNX
   {
-    logo: "KNX",
+    logo: '<img src="../IMMAGINI/KNX_logo.svg.webp" alt="KNX">',
     logoClass: "logo-knx",
     titolo: "eTS eCAMPUS",
     ente: "eCampus",
