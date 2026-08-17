@@ -10,7 +10,7 @@ const attestati = [
   },
 //BTICINO
   {
-    logo: "BTICINO",
+    logo: '<img src="../IMMAGINI/bticino-logo" alt="bticino">',
     logoClass: "logo-bticino",
     titolo: "ACS01: SISTEMA DI CONTROLLO ACCESSI",
     ente: "CAME",
