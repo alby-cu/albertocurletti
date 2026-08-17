@@ -26,6 +26,15 @@ const attestati = [
     anno: "",
     link: "https://drive.google.com/drive/folders/1HNlip0_u8KDZmWd9K9F8iywWolcAopwB?usp=sharing"
   },
+  //COURSERA
+  {
+    logo: '<img src="../IMMAGINI/Coursera_logo.svg.webp" alt="Coursera">',
+    logoClass: "logo-knx",
+    titolo: "Attestati Coursera",
+    ente: "Coursera Inc",
+    anno: "",
+    link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
+  },
 //GOOGLE
   {
     logo: '<img src="../IMMAGINI/Google_logo.svg.webp" alt="Google">',
@@ -61,15 +70,6 @@ const attestati = [
     ente: "Comoli e Ferrari Spa",
     anno: "2021",
     link: "https://drive.google.com/file/d/1PiG1M5dHGCzTHRfReFy5d8ohwzhm9LMZ/view?usp=drive_link"
-  },
-//Coursera
-  {
-    logo: '<img src="../IMMAGINI/Coursera_logo.svg.webp" alt="Coursera">',
-    logoClass: "logo-knx",
-    titolo: "Attestati Coursera",
-    ente: "Coursera Inc",
-    anno: "",
-    link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
   },
 ];
 
