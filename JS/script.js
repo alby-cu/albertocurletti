@@ -1,12 +1,13 @@
 const attestati = [
   {logo:"CAME",logoClass:"logo-came",titolo:"ANTINTRUSIONE: PROGRAMMAZIONE AVANZATA",ente:"CAME",anno:"2023"},
-  {logo:"CAME",logoClass:"logo-came",titolo:"ACS01: SISTEMA DI CONTROLLO ACCESSI",ente:"CAME",anno:"2023"},
+  {logo:"BTICINO",logoClass:"logo-bticino",titolo:"ACS01: SISTEMA DI CONTROLLO ACCESSI",ente:"CAME",anno:"2023"},
   {logo:"CAME",logoClass:"logo-came",titolo:"AGT: GAMMA DERIVATI VIDEOCITOFONICI",ente:"CAME",anno:"2023"},
   {logo:"CAME",logoClass:"logo-came",titolo:"ATI: COMMERCIAL TUTORIAL",ente:"CAME",anno:"2023"},
-  {logo:"Google",logoClass:"logo-google",titolo:"FUNZIONALITÀ PREMIUM AVANZATE PER AMMINISTRATORI IT",ente:"Google",anno:"2022"},
-  {logo:"e-CAMPUS",logoClass:"logo-ecampus",titolo:"eTS eCAMPUS",ente:"eCampus",anno:"2022"},
-  {logo:"ACHIEVEMENT DELL TRAINING",logoClass:"logo-dei",titolo:"ACHIEVEMENT DELL TRAINING",ente:"DEI",anno:"2021"},
-  {logo:"SIEMENS",logoClass:"logo-siemens",titolo:"CERTIFICAZIONE SIEMENS",ente:"Siemens",anno:"2021"}
+  {logo:"Google",logoClass:"logo-google",titolo:"Funzionalità premium avanzate per amministratori IT",ente:"Google",anno:"2025"},
+  {logo:"Google",logoClass:"logo-google",titolo:"Fundamentals of digital marketing",ente:"Google",anno:"2024"},
+  {logo:"KNX",logoClass:"logo-knx",titolo:"eTS eCAMPUS",ente:"eCampus",anno:"2023"}
+  //{logo:"ACHIEVEMENT DELL TRAINING",logoClass:"logo-dei",titolo:"ACHIEVEMENT DELL TRAINING",ente:"DEI",anno:"2021"},
+  //{logo:"SIEMENS",logoClass:"logo-siemens",titolo:"CERTIFICAZIONE SIEMENS",ente:"Siemens",anno:"2021"}
 ];
 
 const certificates = document.getElementById("certificates");
