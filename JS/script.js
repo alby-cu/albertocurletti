@@ -5,7 +5,7 @@ const attestati = [
   {logo:"CAME",logoClass:"logo-came",titolo:"ATI: COMMERCIAL TUTORIAL",ente:"CAME",anno:"2023"},
   {logo:"Google",logoClass:"logo-google",titolo:"Funzionalità premium avanzate per amministratori IT",ente:"Google",anno:"2025"},
   {logo:"Google",logoClass:"logo-google",titolo:"Fundamentals of digital marketing",ente:"Google",anno:"2024"},
-  {logo:"KNX",logoClass:"logo-knx",titolo:"eTS eCAMPUS",ente:"eCampus",anno:"2023"}
+  {logo:"KNX",logoClass:"logo-knx",titolo:"eTS eCAMPUS",ente:"eCampus",anno:"2023",link:"https://drive.google.com/file/d/1NaMBx2Hamvl1SsNiwlXhWnpiszPJl0uz/view"}
   //{logo:"ACHIEVEMENT DELL TRAINING",logoClass:"logo-dei",titolo:"ACHIEVEMENT DELL TRAINING",ente:"DEI",anno:"2021"},
   //{logo:"SIEMENS",logoClass:"logo-siemens",titolo:"CERTIFICAZIONE SIEMENS",ente:"Siemens",anno:"2021"}
 ];
