@@ -1,30 +1,27 @@
 const attestati = [
-  //CAME
+  //BTICINO
   {
-    logo: '<img src="../IMMAGINI/CAME_logo.png" alt="CAME">',
-    logoClass: "logo-came",
-    titolo: "TEST",
-    ente: "CAME Spa",
-    anno: "2023",
-    link: "https://drive.google.com/"
+    logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
+    logoClass: "logo-bticino",
+    titolo: "Attestati BTicino Academy",
+    ente: "BTicino Spa",
+    link: "https://drive.google.com/drive/folders/1hQ5yE9THwLys8HN5pr5Zz4FlnqMWXEGR?usp=sharing"
   },
   //FINDER
   {
     logo: '<img src="../IMMAGINI/Finder_logo.svg.webp" alt="Finder">',
     logoClass: "logo-came",
-    titolo: "TEST",
+    titolo: "Corsi Finder Spa",
     ente: "Finder Spa",
-    anno: "2023",
-    link: "https://drive.google.com/"
+    link: "https://drive.google.com/drive/folders/1ZuXPtnMCrw3zivWpHb0dgA2tb7-3P7pE?usp=drive_link"
   },
-//BTICINO
+  //CAME
   {
-    logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
-    logoClass: "logo-bticino",
-    titolo: "TEST",
-    ente: "BTicino Spa",
-    anno: "2023",
-    link: "https://drive.google.com/"
+    logo: '<img src="../IMMAGINI/CAME_logo.png" alt="CAME">',
+    logoClass: "logo-came",
+    titolo: "Attestati CAME Training Lab",
+    ente: "CAME Spa",
+    link: "https://drive.google.com/drive/folders/1HNlip0_u8KDZmWd9K9F8iywWolcAopwB?usp=sharing"
   },
 //GOOGLE
   {
@@ -53,6 +50,24 @@ const attestati = [
     anno: "2023",
     link: "https://drive.google.com/file/d/1NaMBx2Hamvl1SsNiwlXhWnpiszPJl0uz/view"
   }
+//COMOLI E FERRARI
+  {
+    logo: '<img src="../IMMAGINI/ComolieFerrari_logo.png" alt="Comoli e Ferrari">',
+    logoClass: "logo-knx",
+    titolo: "Introduzione all'elaborazione PLC e segnali dal campo",
+    ente: "Comoli e Ferrari Spa",
+    anno: "2021",
+    link: "https://drive.google.com/file/d/1PiG1M5dHGCzTHRfReFy5d8ohwzhm9LMZ/view?usp=drive_link"
+  }
+//Coursera
+  {
+    logo: '<img src="../IMMAGINI/Coursera_logo.svg.webp" alt="Coursera">',
+    logoClass: "logo-knx",
+    titolo: "Attestati Coursera",
+    ente: "Coursera Inc",
+    link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
+  }
+
 
   /*
   {
