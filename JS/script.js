@@ -12,7 +12,7 @@ const attestati = [
   {
     logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
     logoClass: "logo-bticino",
-    titolo: "ACS01: SISTEMA DI CONTROLLO ACCESSI",
+    titolo: "TEST",
     ente: "BTicino Spa",
     anno: "2023",
     link: "https://drive.google.com/"
