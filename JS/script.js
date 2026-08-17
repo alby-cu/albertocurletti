@@ -5,6 +5,7 @@ const attestati = [
     logoClass: "logo-bticino",
     titolo: "Attestati BTicino Academy",
     ente: "BTicino Spa",
+    anno: "",
     link: "https://drive.google.com/drive/folders/1hQ5yE9THwLys8HN5pr5Zz4FlnqMWXEGR?usp=sharing"
   },
   //FINDER
@@ -13,6 +14,7 @@ const attestati = [
     logoClass: "logo-came",
     titolo: "Corsi Finder Spa",
     ente: "Finder Spa",
+    anno: "",
     link: "https://drive.google.com/drive/folders/1ZuXPtnMCrw3zivWpHb0dgA2tb7-3P7pE?usp=drive_link"
   },
   //CAME
@@ -21,6 +23,7 @@ const attestati = [
     logoClass: "logo-came",
     titolo: "Attestati CAME Training Lab",
     ente: "CAME Spa",
+    anno: "",
     link: "https://drive.google.com/drive/folders/1HNlip0_u8KDZmWd9K9F8iywWolcAopwB?usp=sharing"
   },
 //GOOGLE
@@ -65,29 +68,9 @@ const attestati = [
     logoClass: "logo-knx",
     titolo: "Attestati Coursera",
     ente: "Coursera Inc",
+    anno: "",
     link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
   },
-
-
-  /*
-  {
-    logo: "ACHIEVEMENT DELL TRAINING",
-    logoClass: "logo-dei",
-    titolo: "ACHIEVEMENT DELL TRAINING",
-    ente: "DEI",
-    anno: "2021",
-    link: "https://drive.google.com/"
-  },
-
-  {
-    logo: "SIEMENS",
-    logoClass: "logo-siemens",
-    titolo: "CERTIFICAZIONE SIEMENS",
-    ente: "Siemens",
-    anno: "2021",
-    link: "https://drive.google.com/"
-  }
-  */
 ];
 
 
