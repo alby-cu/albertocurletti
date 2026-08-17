@@ -19,7 +19,7 @@ const attestati = [
   },
 //GOOGLE
   {
-    logo: '<img src="../IMMAGINI/Goolge_logo.svg.webp" alt="KNX">',
+    logo: '<img src="../IMMAGINI/Google_logo.svg.webp" alt="Google">',
     logoClass: "logo-google",
     titolo: "Funzionalità premium avanzate per amministratori IT",
     ente: "Google",
@@ -28,7 +28,7 @@ const attestati = [
   },
 
   {
-    logo: '<img src="../IMMAGINI/Goolge_logo.svg.webp" alt="KNX">',
+    logo: '<img src="../IMMAGINI/Google_logo.svg.webp" alt="Goolge">',
     logoClass: "logo-google",
     titolo: "Fundamentals of digital marketing",
     ente: "Google",
