@@ -1,4 +1,5 @@
 const attestati = [
+  //CAME
   {
     logo: "CAME",
     logoClass: "logo-came",
@@ -7,7 +8,7 @@ const attestati = [
     anno: "2023",
     link: "https://drive.google.com/"
   },
-
+//BTICINO
   {
     logo: "BTICINO",
     logoClass: "logo-bticino",
@@ -34,7 +35,7 @@ const attestati = [
     anno: "2023",
     link: "https://drive.google.com/"
   },
-
+//GOOGLE
   {
     logo: "Google",
     logoClass: "logo-google",
@@ -52,14 +53,14 @@ const attestati = [
     anno: "2024",
     link: "https://drive.google.com/"
   },
-
+//KNX
   {
     logo: "KNX",
     logoClass: "logo-knx",
     titolo: "eTS eCAMPUS",
     ente: "eCampus",
     anno: "2023",
-    link: "https://drive.google.com/"
+    link: "https://drive.google.com/file/d/1NaMBx2Hamvl1SsNiwlXhWnpiszPJl0uz/view"
   }
 
   /*
