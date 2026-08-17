@@ -49,7 +49,7 @@ const attestati = [
     ente: "eCampus",
     anno: "2023",
     link: "https://drive.google.com/file/d/1NaMBx2Hamvl1SsNiwlXhWnpiszPJl0uz/view"
-  }
+  },
 //COMOLI E FERRARI
   {
     logo: '<img src="../IMMAGINI/ComolieFerrari_logo.png" alt="Comoli e Ferrari">',
@@ -58,7 +58,7 @@ const attestati = [
     ente: "Comoli e Ferrari Spa",
     anno: "2021",
     link: "https://drive.google.com/file/d/1PiG1M5dHGCzTHRfReFy5d8ohwzhm9LMZ/view?usp=drive_link"
-  }
+  },
 //Coursera
   {
     logo: '<img src="../IMMAGINI/Coursera_logo.svg.webp" alt="Coursera">',
@@ -66,7 +66,7 @@ const attestati = [
     titolo: "Attestati Coursera",
     ente: "Coursera Inc",
     link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
-  }
+  },
 
 
   /*
