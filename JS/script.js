@@ -8,6 +8,15 @@ const attestati = [
     anno: "2023",
     link: "https://drive.google.com/"
   },
+  //FINDER
+  {
+    logo: '<img src="../IMMAGINI/Finder_logo.svg.webp" alt="Finder">',
+    logoClass: "logo-came",
+    titolo: "TEST",
+    ente: "Finder Spa",
+    anno: "2023",
+    link: "https://drive.google.com/"
+  },
 //BTICINO
   {
     logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
