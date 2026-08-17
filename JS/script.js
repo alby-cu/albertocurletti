@@ -10,7 +10,7 @@ const attestati = [
   },
 //BTICINO
   {
-    logo: '<img src="../IMMAGINI/bticino-logo.jpg" alt="BTicino">',
+    logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
     logoClass: "logo-bticino",
     titolo: "ACS01: SISTEMA DI CONTROLLO ACCESSI",
     ente: "BTicino Spa",
