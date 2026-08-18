@@ -200,6 +200,9 @@ function translateCertificateTitle(title) {
         "Attestati Coursera":
             "Coursera Certificates",
 
+       "Certificazione YouTube Music":
+            "YouTube Music Certification",
+
         "Funzionalità premium avanzate per amministratori IT":
             "Advanced premium features for IT administrators",
 
