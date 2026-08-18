@@ -1,10 +1,13 @@
+```javascript
 // ===============================
 // ATTESTATI
 // ===============================
 
 const attestati = [
 
+  // ===============================
   // BTICINO
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/BTicino_logo.svg.webp" alt="BTicino">',
     titolo: "Attestati BTicino Academy",
@@ -13,7 +16,9 @@ const attestati = [
     link: "https://drive.google.com/drive/folders/1hQ5yE9THwLys8HN5pr5Zz4FlnqMWXEGR?usp=sharing"
   },
 
+  // ===============================
   // FINDER
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/Finder_logo.svg.webp" alt="Finder">',
     titolo: "Corsi Finder Spa",
@@ -22,7 +27,9 @@ const attestati = [
     link: "https://drive.google.com/drive/folders/1ZuXPtnMCrw3zivWpHb0dgA2tb7-3P7pE?usp=drive_link"
   },
 
+  // ===============================
   // CAME
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/CAME_logo.png" alt="CAME">',
     titolo: "Attestati CAME Training Lab",
@@ -31,7 +38,9 @@ const attestati = [
     link: "https://drive.google.com/drive/folders/1HNlip0_u8KDZmWd9K9F8iywWolcAopwB?usp=sharing"
   },
 
+  // ===============================
   // COURSERA
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/Coursera_logo.svg.webp" alt="Coursera">',
     titolo: "Attestati Coursera",
@@ -40,7 +49,9 @@ const attestati = [
     link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
   },
 
+  // ===============================
   // GOOGLE
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/Google_logo.svg.webp" alt="Google">',
     titolo: "Funzionalità premium avanzate per amministratori IT",
@@ -57,7 +68,9 @@ const attestati = [
     link: "https://drive.google.com/"
   },
 
+  // ===============================
   // KNX
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/KNX_logo.svg.webp" alt="KNX">',
     titolo: "eTS eCAMPUS",
@@ -66,7 +79,9 @@ const attestati = [
     link: "https://drive.google.com/file/d/1NaMBx2Hamvl1SsNiwlXhWnpiszPJl0uz/view"
   },
 
+  // ===============================
   // COMOLI E FERRARI
+  // ===============================
   {
     logo: '<img src="../IMMAGINI/ComolieFerrari_logo.png" alt="Comoli e Ferrari">',
     titolo: "Introduzione all'elaborazione PLC e segnali dal campo",
@@ -99,7 +114,9 @@ if (certificates) {
           ${a.logo}
         </div>
 
-        <h3>${a.titolo}</h3>
+        <h3>
+          ${a.titolo}
+        </h3>
 
         <div class="issuer">
           ${a.ente}
@@ -129,74 +146,81 @@ if (certificates) {
 
 
 // ===============================
-// FORM CONTATTI
+// QR CODE — BIGLIETTO DA VISITA
 // ===============================
 
-const contactForm = document.getElementById("contactForm");
+const contactQr = document.getElementById("contactQr");
 
-if (contactForm) {
+if (contactQr) {
 
-  contactForm.addEventListener("submit", function (e) {
+  /*
+   * Dati del contatto
+   *
+   * Il ruolo verrà modificato quando
+   * mi comunicherai quello definitivo.
+   */
 
-    e.preventDefault();
+  const nome = "Alberto Curletti";
+  const azienda = "Finder Spa";
+  const ruolo = "Ruolo da definire";
+  const telefono = "+39 3382601324";
+  const email = "curlettialberto@gmail.com";
+  const localita = "Carmagnola, Piemonte, Italia";
 
-    // Recupero dati dal form
-    const nome =
-      document.getElementById("nome")?.value.trim() || "";
+  const linkedin =
+    "https://it.linkedin.com/in/curlettialberto";
 
-    const email =
-      document.getElementById("email")?.value.trim() || "";
-
-    const messaggio =
-      document.getElementById("messaggio")?.value.trim() || "";
-
-
-    // ===============================
-    // EMAIL DESTINATARIO
-    // ===============================
-
-    const destinatario = "curlettialberto@gmail.com";
-
-
-    // ===============================
-    // OGGETTO EMAIL
-    // ===============================
-
-    const oggetto =
-      `Contatto dal sito - ${nome}`;
+  /*
+   * X verrà aggiunto quando creerai
+   * il profilo.
+   */
 
 
-    // ===============================
-    // CORPO EMAIL
-    // ===============================
+  // ===============================
+  // vCARD
+  // ===============================
 
-    const corpo = `
-Nome: ${nome}
-
-Email: ${email}
-
-Messaggio:
-
-${messaggio}
-    `.trim();
-
-
-    // ===============================
-    // CREAZIONE MAILTO
-    // ===============================
-
-    const mailto =
-      `mailto:${destinatario}` +
-      `?subject=${encodeURIComponent(oggetto)}` +
-      `&body=${encodeURIComponent(corpo)}`;
+  const vCard = [
+    "BEGIN:VCARD",
+    "VERSION:3.0",
+    "N:Curletti;Alberto;;;",
+    "FN:Alberto Curletti",
+    `ORG:${azienda}`,
+    `TITLE:${ruolo}`,
+    `TEL;TYPE=CELL:${telefono}`,
+    `EMAIL;TYPE=INTERNET:${email}`,
+    `ADR;TYPE=WORK:;;${localita};;;;`,
+    `URL:${linkedin}`,
+    "END:VCARD"
+  ].join("\n");
 
 
-    // ===============================
-    // APERTURA CLIENT EMAIL
-    // ===============================
+  // ===============================
+  // GENERAZIONE QR
+  // ===============================
 
-    window.location.href = mailto;
+  if (typeof QRCode !== "undefined") {
 
-  });
+    new QRCode(contactQr, {
+
+      text: vCard,
+
+      width: 220,
+      height: 220,
+
+      correctLevel: QRCode.CorrectLevel.H
+
+    });
+
+  } else {
+
+    contactQr.innerHTML = `
+      <p>
+        QR Code non disponibile.
+      </p>
+    `;
+
+  }
 
 }
+```
