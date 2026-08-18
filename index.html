@@ -29,6 +29,142 @@
 <body>
 
 
+<!-- =========================================================
+     WORK IN PROGRESS POPUP
+========================================================= -->
+
+<div id="work-progress-popup">
+
+
+    <div class="work-progress-box">
+
+
+        <div class="work-progress-label">
+            WEBSITE
+        </div>
+
+
+        <h2>
+            WORK IN PROGRESS
+        </h2>
+
+
+        <p>
+            Il sito è attualmente in fase di sviluppo.
+            Alcune sezioni potrebbero essere ancora
+            incomplete.
+        </p>
+
+
+        <button
+            type="button"
+            onclick="document.getElementById('work-progress-popup').style.display='none'"
+        >
+            CONTINUA
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     STILE POPUP
+========================================================= -->
+
+<style>
+
+#work-progress-popup{
+    position:fixed;
+    inset:0;
+    z-index:9999;
+    background:rgba(7,25,54,.82);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:25px;
+    backdrop-filter:blur(4px);
+}
+
+.work-progress-box{
+    width:100%;
+    max-width:480px;
+    padding:45px 40px;
+    background:#fff;
+    border:1px solid #dfe3e7;
+    border-radius:9px;
+    text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.work-progress-label{
+    color:#126bc5;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.5px;
+}
+
+.work-progress-box h2{
+    margin:14px 0 15px;
+    color:#071936;
+    font-size:34px;
+    line-height:1;
+    letter-spacing:-1px;
+}
+
+.work-progress-box p{
+    margin:0 auto 28px;
+    max-width:350px;
+    color:#69737e;
+    font-size:12px;
+    line-height:1.7;
+}
+
+.work-progress-box button{
+    border:0;
+    padding:13px 28px;
+    background:#071936;
+    color:#fff;
+    border-radius:4px;
+    font-size:10px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.work-progress-box button:hover{
+    background:#126bc5;
+    transform:translateY(-2px);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:600px){
+
+    .work-progress-box{
+        padding:35px 25px;
+    }
+
+    .work-progress-box h2{
+        font-size:28px;
+    }
+
+}
+
+</style>
+
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
 <header class="header">
 
 
@@ -92,6 +228,10 @@
 </header>
 
 
+
+<!-- =========================================================
+     CONTENUTO PRINCIPALE
+========================================================= -->
 
 <main>
 
@@ -211,6 +351,10 @@
 </main>
 
 
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
 
