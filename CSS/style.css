@@ -501,7 +501,7 @@ a{
 
 
 /* =========================================================
-   LOCATION - PUNTINA NERA
+   LOCATION - PUNTINA BIANCA
 ========================================================= */
 
 .location-circle{
@@ -512,7 +512,7 @@ a{
     position:relative;
     width:12px;
     height:12px;
-    background:#000;
+    background:#fff;
     border-radius:50% 50% 50% 0;
     transform:rotate(-45deg);
     display:block;
@@ -523,7 +523,7 @@ a{
     position:absolute;
     width:4px;
     height:4px;
-    background:#fff;
+    background:#071936;
     border-radius:50%;
     top:4px;
     left:4px;
