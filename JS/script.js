@@ -40,6 +40,15 @@ const attestati = [
         link: "https://drive.google.com/drive/folders/1sEyKQue-SLWI-lPFo13cZSMWB2ZF8N3T?usp=sharing"
     },
 
+   {
+        logo: '<img src="../../IMMAGINI/YouTube_logo.svg.webp" alt="Google">',
+        logoClass: "certificate-logo",
+        titolo: "Certificazione YouTube Music",
+        ente: "Google",
+        anno: "2026",
+        link: "https://drive.google.com/file/d/1rd5aHhWMSOPa049y9Xrhnr2aR0Ji0hlE/view?usp=sharing"
+    },
+   
     {
         logo: '<img src="../../IMMAGINI/Google_logo.svg.webp" alt="Google">',
         logoClass: "certificate-logo",
