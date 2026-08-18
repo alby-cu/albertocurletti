@@ -501,6 +501,36 @@ a{
 
 
 /* =========================================================
+   LOCATION - PUNTINA NERA
+========================================================= */
+
+.location-circle{
+    position:relative;
+}
+
+.location-pin{
+    position:relative;
+    width:12px;
+    height:12px;
+    background:#000;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    display:block;
+}
+
+.location-pin::after{
+    content:"";
+    position:absolute;
+    width:4px;
+    height:4px;
+    background:#fff;
+    border-radius:50%;
+    top:4px;
+    left:4px;
+}
+
+
+/* =========================================================
    PARTE DESTRA CONTATTI
 ========================================================= */
 
