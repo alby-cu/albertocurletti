@@ -12,20 +12,13 @@ html {
 
 body {
     margin: 0;
-
     background: #f6f7f8;
-
     color: #0b1428;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
 
@@ -34,15 +27,11 @@ a {
 ========================================================= */
 
 .header {
-
     height: 55px;
-
     background: #ffffff;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     padding: 0 5%;
@@ -51,94 +40,75 @@ a {
 }
 
 
+/* =========================================================
+   LOGO PERSONALE
+========================================================= */
+
 .logo {
-
     display: flex;
-
     align-items: center;
-
     gap: 10px;
 
+    text-decoration: none;
     font-weight: 700;
 }
 
-
 .logo-ac {
-
     width: 30px;
-
     height: 30px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     background: #0b1428;
-
     color: #ffffff;
 
     font-size: 12px;
-
     font-weight: 700;
 }
 
-
 .logo-name {
-
     font-size: 13px;
-
     letter-spacing: 1.2px;
 }
 
 
 /* =========================================================
-   NAVIGAZIONE
+   NAV
 ========================================================= */
 
 nav {
-
     display: flex;
-
     align-items: center;
-
     gap: 32px;
 }
 
-
 nav a {
-
     position: relative;
 
+    text-decoration: none;
+
     font-size: 11px;
-
     font-weight: 700;
-
     letter-spacing: 1px;
 
     color: #687080;
 
-    transition:
-        color 0.2s ease;
+    transition: color 0.2s ease;
 }
-
 
 nav a:hover,
 nav a.active {
-
     color: #0b1428;
 }
 
-
 nav a.active::after {
-
     content: "";
 
     position: absolute;
 
     left: 0;
-
     right: 0;
 
     bottom: -19px;
@@ -154,10 +124,306 @@ nav a.active::after {
 ========================================================= */
 
 .page-container {
-
     width: min(1180px, 90%);
-
     margin: 0 auto;
+}
+
+
+/* =========================================================
+   HOME
+========================================================= */
+
+.hero {
+    min-height: calc(100vh - 125px);
+
+    display: grid;
+
+    grid-template-columns: 1.15fr 0.85fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    padding: 70px 0;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: #7c8492;
+}
+
+.hero h1 {
+    margin: 0;
+
+    font-size: clamp(58px, 8vw, 105px);
+
+    line-height: 0.88;
+
+    letter-spacing: -6px;
+}
+
+.hero-text {
+    max-width: 520px;
+
+    margin: 30px 0;
+
+    color: #687080;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.button-primary,
+.button-secondary {
+    min-height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 22px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+}
+
+.button-primary {
+    gap: 12px;
+
+    background: #0b1428;
+    color: #ffffff;
+}
+
+.button-primary span {
+    font-size: 17px;
+}
+
+.button-secondary {
+    border: 1px solid #dce1e7;
+    color: #0b1428;
+    background: #ffffff;
+}
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-card {
+    min-height: 115px;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7eb;
+
+    display: flex;
+    gap: 20px;
+
+    align-items: flex-start;
+}
+
+.hero-card-number {
+    font-size: 11px;
+    font-weight: 700;
+
+    color: #9aa1ab;
+}
+
+.hero-card strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero-card p {
+    margin: 0;
+
+    color: #687080;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.page-heading {
+    padding: 80px 0 45px;
+}
+
+.page-heading h1 {
+    margin: 0;
+
+    font-size: clamp(48px, 7vw, 80px);
+
+    line-height: 0.9;
+
+    letter-spacing: -4px;
+}
+
+.page-heading p {
+    max-width: 600px;
+
+    margin-top: 22px;
+
+    color: #687080;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ATTESTATI
+========================================================= */
+
+.certificates-page {
+    padding-bottom: 80px;
+}
+
+.certificates-grid-large {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.certificate-card {
+    min-height: 290px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e4e7eb;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(11, 20, 40, 0.06);
+}
+
+
+/* =========================================================
+   LOGHI ATTESTATI
+   UNA SOLA CLASSE
+========================================================= */
+
+.certificate-logo {
+    width: 150px;
+    height: 70px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.certificate-logo img {
+    display: block;
+
+    width: 150px;
+    height: 70px;
+
+    object-fit: contain;
+    object-position: left center;
+}
+
+
+.certificate-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 19px;
+
+    line-height: 1.3;
+
+    letter-spacing: -0.4px;
+}
+
+.issuer {
+    font-size: 13px;
+    color: #687080;
+}
+
+.year {
+    margin-top: 6px;
+
+    font-size: 12px;
+
+    color: #9aa1ab;
+}
+
+.view {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-top: 25px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+}
+
+.view span {
+    font-size: 17px;
+
+    transition:
+        transform 0.2s ease;
+}
+
+.view:hover span {
+    transform: translateX(4px);
 }
 
 
@@ -166,8 +432,7 @@ nav a.active::after {
 ========================================================= */
 
 .contact-page {
-
-    min-height: calc(100vh - 55px);
+    min-height: calc(100vh - 125px);
 
     display: grid;
 
@@ -182,29 +447,11 @@ nav a.active::after {
     padding: 70px 0;
 }
 
-
 .contact-information {
-
     max-width: 580px;
 }
 
-
-.eyebrow {
-
-    margin-bottom: 14px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    color: #7c8492;
-}
-
-
 .contact-information h1 {
-
     margin: 0;
 
     font-size:
@@ -215,13 +462,10 @@ nav a.active::after {
     letter-spacing: -4px;
 }
 
-
 .contact-intro {
-
     max-width: 520px;
 
-    margin:
-        25px 0 40px;
+    margin: 25px 0 40px;
 
     color: #687080;
 
@@ -232,11 +476,10 @@ nav a.active::after {
 
 
 /* =========================================================
-   LISTA CONTATTI
+   CONTATTI - LISTA
 ========================================================= */
 
 .contact-list {
-
     display: flex;
 
     flex-direction: column;
@@ -244,9 +487,7 @@ nav a.active::after {
     gap: 22px;
 }
 
-
 .contact-row {
-
     display: flex;
 
     align-items: center;
@@ -254,11 +495,8 @@ nav a.active::after {
     gap: 17px;
 }
 
-
 .contact-circle {
-
     width: 42px;
-
     height: 42px;
 
     flex-shrink: 0;
@@ -266,7 +504,6 @@ nav a.active::after {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -282,21 +519,15 @@ nav a.active::after {
     font-weight: 700;
 }
 
-
 .linkedin-circle {
-
     font-size: 14px;
 }
 
-
 .twitter-circle {
-
     font-size: 18px;
 }
 
-
 .contact-data {
-
     display: flex;
 
     flex-direction: column;
@@ -304,9 +535,7 @@ nav a.active::after {
     gap: 4px;
 }
 
-
 .contact-data strong {
-
     font-size: 10px;
 
     letter-spacing: 1.5px;
@@ -314,25 +543,16 @@ nav a.active::after {
     color: #8a929f;
 }
 
-
 .contact-data span,
 .contact-data a {
-
     font-size: 14px;
 
     color: #0b1428;
+
+    text-decoration: none;
 }
-
-
-.contact-data a {
-
-    transition:
-        opacity 0.2s ease;
-}
-
 
 .contact-data a:hover {
-
     opacity: 0.6;
 }
 
@@ -342,15 +562,12 @@ nav a.active::after {
 ========================================================= */
 
 .contact-card-wrapper {
-
     display: flex;
 
     justify-content: center;
 }
 
-
 .contact-card {
-
     width: 100%;
 
     max-width: 410px;
@@ -367,15 +584,11 @@ nav a.active::after {
     text-align: center;
 }
 
-
 .contact-card .eyebrow {
-
     margin-bottom: 10px;
 }
 
-
 .contact-card h2 {
-
     margin: 0;
 
     font-size: 28px;
@@ -383,13 +596,10 @@ nav a.active::after {
     letter-spacing: -1px;
 }
 
-
 .contact-card-text {
-
-    margin:
-        14px auto 28px;
-
     max-width: 300px;
+
+    margin: 14px auto 28px;
 
     color: #687080;
 
@@ -404,9 +614,7 @@ nav a.active::after {
 ========================================================= */
 
 .contact-qr {
-
     width: 220px;
-
     height: 220px;
 
     margin: 0 auto 25px;
@@ -414,29 +622,24 @@ nav a.active::after {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: #ffffff;
 }
 
-
 .contact-qr img {
-
     display: block;
 
     width: 220px;
-
     height: 220px;
 }
 
 
 /* =========================================================
-   NOME BIGLIETTO
+   NOME
 ========================================================= */
 
 .contact-card-name {
-
     display: flex;
 
     flex-direction: column;
@@ -446,17 +649,13 @@ nav a.active::after {
     margin-bottom: 25px;
 }
 
-
 .contact-card-name strong {
-
     font-size: 19px;
 
     letter-spacing: -0.3px;
 }
 
-
 .contact-card-name span {
-
     font-size: 12px;
 
     color: #7c8492;
@@ -468,15 +667,13 @@ nav a.active::after {
 
 
 /* =========================================================
-   DOWNLOAD
+   DOWNLOAD VCARD
 ========================================================= */
 
 .contact-download {
-
     display: inline-flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 12px;
@@ -497,30 +694,25 @@ nav a.active::after {
 
     letter-spacing: 1px;
 
+    text-decoration: none;
+
     transition:
         background 0.2s ease,
         transform 0.2s ease;
 }
 
-
 .contact-download:hover {
-
     background: #1a2740;
 
     transform: translateY(-1px);
 }
 
-
 .contact-download span {
-
     font-size: 17px;
 }
 
-
 .contact-card-note {
-
-    margin:
-        17px 0 0;
+    margin: 17px 0 0;
 
     color: #8a929f;
 
@@ -531,190 +723,10 @@ nav a.active::after {
 
 
 /* =========================================================
-   ATTESTATI
-========================================================= */
-
-.page-heading {
-
-    padding: 80px 0 45px;
-}
-
-
-.page-heading h1 {
-
-    margin: 0;
-
-    font-size:
-        clamp(42px, 6vw, 70px);
-
-    line-height: 0.95;
-
-    letter-spacing: -3px;
-}
-
-
-.page-heading p {
-
-    max-width: 600px;
-
-    margin-top: 22px;
-
-    color: #687080;
-
-    font-size: 16px;
-
-    line-height: 1.7;
-}
-
-
-.certificates-grid-large {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr));
-
-    gap: 22px;
-
-    padding-bottom: 80px;
-}
-
-
-.certificate-card {
-
-    min-height: 290px;
-
-    padding: 30px;
-
-    background: #ffffff;
-
-    border: 1px solid #e4e7eb;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-.certificate-card:hover {
-
-    transform: translateY(-3px);
-
-    box-shadow:
-        0 15px 35px rgba(11, 20, 40, 0.06);
-}
-
-
-/* =========================================================
-   UNICA CLASSE PER TUTTI I LOGHI
-========================================================= */
-
-.certificate-logo {
-
-    width: 150px;
-
-    height: 70px;
-
-    margin-bottom: 25px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: flex-start;
-}
-
-
-.certificate-logo img {
-
-    display: block;
-
-    width: 150px;
-
-    height: 70px;
-
-    object-fit: contain;
-
-    object-position: left center;
-}
-
-
-.certificate-card h3 {
-
-    margin:
-        0 0 10px;
-
-    font-size: 19px;
-
-    line-height: 1.3;
-
-    letter-spacing: -0.4px;
-}
-
-
-.issuer {
-
-    font-size: 13px;
-
-    color: #687080;
-}
-
-
-.year {
-
-    margin-top: 6px;
-
-    font-size: 12px;
-
-    color: #9aa1ab;
-}
-
-
-.view {
-
-    display: inline-flex;
-
-    align-items: center;
-
-    gap: 8px;
-
-    margin-top: 25px;
-
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 1px;
-}
-
-
-.view span {
-
-    font-size: 17px;
-
-    transition:
-        transform 0.2s ease;
-}
-
-
-.view:hover span {
-
-    transform: translateX(4px);
-}
-
-
-/* =========================================================
    FOOTER
 ========================================================= */
 
 footer {
-
     min-height: 70px;
 
     padding: 20px 5%;
@@ -736,9 +748,7 @@ footer {
     font-size: 11px;
 }
 
-
 .footer-links {
-
     display: flex;
 
     align-items: center;
@@ -746,17 +756,13 @@ footer {
     gap: 10px;
 }
 
-
 .footer-social {
-
     width: 32px;
-
     height: 32px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border: 1px solid #e1e5e9;
@@ -768,11 +774,11 @@ footer {
     font-size: 12px;
 
     font-weight: 700;
+
+    text-decoration: none;
 }
 
-
 .x-footer {
-
     font-size: 16px;
 }
 
@@ -783,179 +789,161 @@ footer {
 
 @media (max-width: 850px) {
 
-    .contact-page {
+    .hero {
+        grid-template-columns: 1fr;
 
+        gap: 50px;
+
+        padding: 60px 0;
+    }
+
+    .hero-side {
+        max-width: 650px;
+    }
+
+    .contact-page {
         grid-template-columns: 1fr;
 
         gap: 55px;
 
-        padding:
-            55px 0 70px;
-
+        padding: 55px 0 70px;
     }
 
-
     .contact-information {
-
         max-width: none;
     }
 
-
     .contact-card-wrapper {
-
         justify-content: flex-start;
     }
 
-
     .contact-card {
-
         max-width: 100%;
     }
-
 }
 
 
 @media (max-width: 650px) {
 
     .header {
-
         height: auto;
 
         min-height: 65px;
 
-        padding:
-            15px 5%;
+        padding: 15px 5%;
 
         flex-direction: column;
 
-        gap: 15px;
+        align-items: stretch;
 
+        gap: 15px;
     }
 
+    .logo {
+        align-self: flex-start;
+    }
 
     nav {
+        width: 100%;
+
+        justify-content: flex-end;
 
         gap: 20px;
 
         flex-wrap: wrap;
-
-        justify-content: center;
-
     }
-
 
     nav a.active::after {
-
         bottom: -8px;
-
     }
 
-
-    .contact-page {
-
+    .hero {
         padding-top: 45px;
-
     }
 
+    .hero h1 {
+        font-size: 58px;
 
-    .contact-information h1 {
+        letter-spacing: -4px;
+    }
 
-        font-size: 50px;
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .page-heading {
+        padding-top: 55px;
+    }
+
+    .page-heading h1 {
+        font-size: 55px;
 
         letter-spacing: -3px;
-
     }
-
-
-    .contact-card {
-
-        padding: 30px 22px;
-
-    }
-
 
     .certificates-grid-large {
-
         grid-template-columns: 1fr;
-
     }
 
+    .contact-page {
+        padding-top: 45px;
+    }
+
+    .contact-information h1 {
+        font-size: 55px;
+
+        letter-spacing: -3px;
+    }
+
+    .contact-card {
+        padding: 30px 22px;
+    }
 
     footer {
-
         flex-direction: column;
 
         text-align: center;
-
     }
-
 }
 
 
 @media (max-width: 420px) {
 
     .logo-name {
-
         font-size: 11px;
-
     }
-
 
     nav {
-
         gap: 15px;
-
     }
-
 
     nav a {
-
         font-size: 10px;
-
     }
 
+    .hero h1 {
+        font-size: 50px;
+    }
 
     .contact-row {
-
         align-items: flex-start;
-
     }
-
 
     .contact-circle {
-
         width: 38px;
-
         height: 38px;
-
     }
-
 
     .contact-data a,
     .contact-data span {
-
         font-size: 13px;
 
         word-break: break-word;
-
     }
 
-
-    .contact-qr {
-
-        width: 200px;
-
-        height: 200px;
-
-    }
-
-
+    .contact-qr,
     .contact-qr img {
-
         width: 200px;
-
         height: 200px;
-
     }
-
 }
