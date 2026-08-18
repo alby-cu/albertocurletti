@@ -46,7 +46,7 @@ const attestati = [
         titolo: "Funzionalità premium avanzate per amministratori IT",
         ente: "Google",
         anno: "2025",
-        link: "https://drive.google.com/"
+        link: "https://drive.google.com/file/d/1tnfFIHPZugcAoS-oBGvBZfN_GalHXWqe/view?usp=drive_link"
     },
 
     {
@@ -55,7 +55,7 @@ const attestati = [
         titolo: "Fundamentals of digital marketing",
         ente: "Google",
         anno: "2024",
-        link: "https://drive.google.com/"
+        link: "https://drive.google.com/file/d/1pjTqPAz180MdhTpqmhyb4gvfvIZ10Ez_/view?usp=sharing"
     },
 
     {
