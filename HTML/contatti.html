@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="it">
 
@@ -70,7 +69,7 @@
 
 
         <!-- =========================
-             PARTE SINISTRA
+             INFORMAZIONI
         ========================== -->
 
         <div class="contact-information">
@@ -98,9 +97,7 @@
             <div class="contact-list">
 
 
-                <!-- =========================
-                     EMAIL
-                ========================== -->
+                <!-- EMAIL -->
 
                 <div class="contact-row">
 
@@ -125,9 +122,7 @@
 
 
 
-                <!-- =========================
-                     TELEFONO
-                ========================== -->
+                <!-- TELEFONO -->
 
                 <div class="contact-row">
 
@@ -152,9 +147,7 @@
 
 
 
-                <!-- =========================
-                     LINKEDIN
-                ========================== -->
+                <!-- LINKEDIN -->
 
                 <div class="contact-row">
 
@@ -183,9 +176,7 @@
 
 
 
-                <!-- =========================
-                     X
-                ========================== -->
+                <!-- X -->
 
                 <div class="contact-row">
 
@@ -210,63 +201,7 @@
 
 
 
-                <!-- =========================
-                     AZIENDA
-                ========================== -->
-
-                <div class="contact-row">
-
-                    <div class="contact-circle">
-                        F
-                    </div>
-
-
-                    <div class="contact-data">
-
-                        <strong>
-                            AZIENDA
-                        </strong>
-
-                        <span>
-                            Finder Spa
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- =========================
-                     RUOLO
-                ========================== -->
-
-                <div class="contact-row">
-
-                    <div class="contact-circle">
-                        •
-                    </div>
-
-
-                    <div class="contact-data">
-
-                        <strong>
-                            RUOLO
-                        </strong>
-
-                        <span>
-                            Ruolo da definire
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- =========================
-                     POSIZIONE
-                ========================== -->
+                <!-- POSIZIONE -->
 
                 <div class="contact-row">
 
@@ -302,7 +237,7 @@
 
 
         <!-- =========================
-             BIGLIETTO DA VISITA
+             BIGLIETTO DIGITALE
         ========================== -->
 
         <div class="contact-form-wrapper contact-card-wrapper">
@@ -323,16 +258,14 @@
 
                 <p class="contact-card-text">
 
-                    Scansiona il QR Code per salvare i miei dati
-                    direttamente nella rubrica del tuo telefono.
+                    Scansiona il QR Code per salvare
+                    direttamente i miei dati nella rubrica.
 
                 </p>
 
 
 
-                <!-- =========================
-                     QR CODE
-                ========================== -->
+                <!-- QR CODE -->
 
                 <div
                     id="contactQr"
@@ -342,9 +275,7 @@
 
 
 
-                <!-- =========================
-                     DATI
-                ========================== -->
+                <!-- NOME -->
 
                 <div class="contact-card-name">
 
@@ -353,21 +284,19 @@
                     </strong>
 
                     <span>
-                        Finder Spa
+                        Contatto personale
                     </span>
 
                 </div>
 
 
 
-                <!-- =========================
-                     PULSANTE VCARD
-                ========================== -->
+                <!-- DOWNLOAD VCARD -->
 
                 <a
-                    href="../VCARD/alberto-curletti.vcf"
+                    href="#"
+                    id="downloadVcard"
                     class="contact-download"
-                    download
                 >
                     SCARICA CONTATTO
                     <span>↓</span>
@@ -376,8 +305,8 @@
 
                 <p class="contact-card-note">
 
-                    Il file può essere importato nella rubrica
-                    del telefono o in Outlook.
+                    Il contatto può essere salvato nella rubrica
+                    del telefono o importato in Outlook.
 
                 </p>
 
@@ -443,6 +372,13 @@
 
 
 <!-- ===============================
+     QR CODE
+================================ -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+
+<!-- ===============================
      JAVASCRIPT
 ================================ -->
 
@@ -452,18 +388,3 @@
 </body>
 
 </html>
-```
-
-Questo HTML è già predisposto per:
-
-* QR Code del contatto
-* download della **vCard `.vcf`**
-* importazione del contatto in rubrica/Outlook
-* Finder Spa
-* ruolo modificabile successivamente
-* LinkedIn
-* X da aggiungere quando crei il profilo
-* Carmagnola collegata a Google Maps
-* email e telefono cliccabili
-
-Il prossimo passaggio è fare il **`script.js` completo** in modo che generi realmente il QR Code con tutti questi dati. Inoltre bisogna creare il file `alberto-curletti.vcf`.
