@@ -17,6 +17,7 @@ a{
     color:inherit
 }
 
+
 /* =========================
    HEADER
 ========================= */
@@ -84,6 +85,7 @@ a{
     background:#126bc5
 }
 
+
 /* =========================
    GENERALE
 ========================= */
@@ -94,6 +96,7 @@ a{
     font-weight:700;
     letter-spacing:.2px
 }
+
 
 /* =========================
    HERO
@@ -174,6 +177,7 @@ a{
     padding:18px 24px
 }
 
+
 /* =========================
    ABOUT
 ========================= */
@@ -207,6 +211,7 @@ a{
     margin-bottom:22px
 }
 
+
 /* =========================
    PAGINE
 ========================= */
@@ -238,6 +243,7 @@ a{
     font-size:14px
 }
 
+
 /* =========================
    LINKEDIN STATUS
 ========================= */
@@ -257,6 +263,7 @@ a{
     background:#38a15c;
     border-radius:50%
 }
+
 
 /* =========================
    ATTESTATI
@@ -294,16 +301,19 @@ a{
     box-shadow:0 8px 25px rgba(0,0,0,.06)
 }
 
+
 /* =========================
    LOGHI ATTESTATI
 ========================= */
 
 /*
-   Tutti i loghi hanno la stessa area:
-   120px x 45px.
+   UNICA CLASSE PER TUTTI I LOGHI
+   DEGLI ENTI / AZIENDE.
 
-   L'immagine viene scalata automaticamente
-   mantenendo le proporzioni.
+   Tutti i loghi vengono inseriti
+   nella stessa area e scalati
+   automaticamente mantenendo
+   le proporzioni.
 */
 
 .certificate-logo{
@@ -323,35 +333,6 @@ a{
     display:block
 }
 
-/* Compatibilità con eventuali loghi testuali */
-
-.logo-came{
-    font-size:16px;
-    font-weight:800
-}
-
-.logo-came::after{
-    content:"+";
-    color:#147bc1;
-    margin-left:3px
-}
-
-.logo-google{
-    font-size:20px
-}
-
-.logo-ecampus{
-    color:#174f84
-}
-
-.logo-dei{
-    font-size:10px;
-    line-height:1.1
-}
-
-.logo-siemens{
-    color:#008d8a
-}
 
 /* =========================
    TESTO ATTESTATI
@@ -381,6 +362,7 @@ a{
     margin-left:8px;
     font-size:15px
 }
+
 
 /* =========================
    LINKEDIN SYNC
@@ -433,6 +415,7 @@ a{
     background:#3ba05a;
     border-radius:50%
 }
+
 
 /* =========================
    CONTATTI
@@ -506,6 +489,7 @@ a{
     color:#126bc5
 }
 
+
 /* =========================
    FORM
 ========================= */
@@ -571,6 +555,7 @@ a{
     font-size:10px
 }
 
+
 /* =========================
    FOOTER
 ========================= */
@@ -586,14 +571,61 @@ footer{
     font-size:10px
 }
 
-footer a{
-    color:#dce3ec;
-    text-decoration:none
+
+/* CONTENITORE LOGHI SOCIAL */
+
+.footer-links{
+    display:flex;
+    align-items:center;
+    gap:18px
 }
 
-footer a:hover{
-    color:#fff
+
+/* LOGHI SOCIAL */
+
+.footer-social{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    width:28px;
+    height:28px;
+
+    color:#fff;
+    text-decoration:none;
+
+    font-family:Arial,Helvetica,sans-serif;
+
+    transition:
+        opacity .2s ease,
+        transform .2s ease
 }
+
+
+/* LINKEDIN */
+
+.linkedin-footer{
+    font-size:17px;
+    font-weight:700
+}
+
+
+/* X */
+
+.x-footer{
+    font-size:21px;
+    font-weight:400
+}
+
+
+/* HOVER */
+
+.footer-social:hover{
+    color:#fff;
+    opacity:.65;
+    transform:translateY(-2px)
+}
+
 
 /* =========================
    TABLET
@@ -631,7 +663,9 @@ footer a:hover{
         grid-template-columns:1fr;
         gap:50px
     }
+
 }
+
 
 /* =========================
    MOBILE
@@ -713,4 +747,5 @@ footer a:hover{
     footer{
         font-size:8px
     }
+
 }
