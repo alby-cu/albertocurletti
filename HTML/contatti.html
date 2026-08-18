@@ -20,9 +20,7 @@
 
     <a href="../HTML/index.html" class="logo">
 
-        <span class="logo-ac">
-            AC
-        </span>
+        <span class="logo-ac">AC</span>
 
         <span class="logo-name">
             ALBERTO CURLETTI
@@ -41,10 +39,7 @@
             ATTESTATI
         </a>
 
-        <a
-            href="../HTML/contatti.html"
-            class="active"
-        >
+        <a href="../HTML/contatti.html" class="active">
             CONTATTI
         </a>
 
@@ -60,7 +55,9 @@
     <section class="contact-page">
 
 
-        <!-- SINISTRA -->
+        <!-- =========================
+             PARTE SINISTRA
+        ========================== -->
 
         <div class="contact-information">
 
@@ -87,7 +84,9 @@
             <div class="contact-list">
 
 
-                <!-- EMAIL -->
+                <!-- =========================
+                     EMAIL
+                ========================== -->
 
                 <div class="contact-row">
 
@@ -95,15 +94,16 @@
                         ✉
                     </div>
 
+
                     <div class="contact-data">
 
                         <strong>
                             EMAIL
                         </strong>
 
-                        <a href="mailto:curlettialberto@gmail.com">
+                        <span>
                             curlettialberto@gmail.com
-                        </a>
+                        </span>
 
                     </div>
 
@@ -111,7 +111,9 @@
 
 
 
-                <!-- TELEFONO -->
+                <!-- =========================
+                     TELEFONO
+                ========================== -->
 
                 <div class="contact-row">
 
@@ -119,15 +121,16 @@
                         ☎
                     </div>
 
+
                     <div class="contact-data">
 
                         <strong>
                             TELEFONO
                         </strong>
 
-                        <a href="tel:+393382601324">
+                        <span>
                             +39 3382601324
-                        </a>
+                        </span>
 
                     </div>
 
@@ -135,7 +138,9 @@
 
 
 
-                <!-- LINKEDIN -->
+                <!-- =========================
+                     LINKEDIN
+                ========================== -->
 
                 <div class="contact-row">
 
@@ -143,11 +148,13 @@
                         in
                     </div>
 
+
                     <div class="contact-data">
 
                         <strong>
                             LINKEDIN
                         </strong>
+
 
                         <a
                             href="https://it.linkedin.com/in/curlettialberto"
@@ -163,7 +170,9 @@
 
 
 
-                <!-- X -->
+                <!-- =========================
+                     X
+                ========================== -->
 
                 <div class="contact-row">
 
@@ -171,15 +180,21 @@
                         𝕏
                     </div>
 
+
                     <div class="contact-data">
 
                         <strong>
                             X
                         </strong>
 
-                        <span>
-                            Profilo in arrivo
-                        </span>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            x.com/IL-TUO-USERNAME
+                        </a>
 
                     </div>
 
@@ -187,7 +202,9 @@
 
 
 
-                <!-- POSIZIONE -->
+                <!-- =========================
+                     POSIZIONE
+                ========================== -->
 
                 <div class="contact-row">
 
@@ -195,19 +212,16 @@
                         ●
                     </div>
 
+
                     <div class="contact-data">
 
                         <strong>
                             POSIZIONE
                         </strong>
 
-                        <a
-                            href="https://www.google.com/maps/search/?api=1&query=Carmagnola%2C%20Piemonte%2C%20Italia"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <span>
                             Carmagnola, Piemonte, Italia
-                        </a>
+                        </span>
 
                     </div>
 
@@ -221,73 +235,67 @@
 
 
 
-        <!-- DESTRA -->
+        <!-- =========================
+             PARTE DESTRA
+        ========================== -->
 
-        <div class="contact-card-wrapper">
-
-
-            <div class="contact-card">
-
-
-                <div class="eyebrow">
-                    BIGLIETTO DA VISITA
-                </div>
+        <div class="contact-form-wrapper">
 
 
-                <h2>
-                    Salva i miei contatti
-                </h2>
+            <form
+                id="contactForm"
+                class="contact-form"
+            >
 
 
-                <p class="contact-card-text">
-
-                    Scansiona il QR Code per salvare
-                    direttamente i miei dati nella rubrica.
-
-                </p>
+                <div class="form-row">
 
 
+                    <input
+                        type="text"
+                        placeholder="Nome"
+                        required
+                    >
 
-                <div
-                    id="contactQr"
-                    class="contact-qr"
-                ></div>
 
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        required
+                    >
 
-
-                <div class="contact-card-name">
-
-                    <strong>
-                        Alberto Curletti
-                    </strong>
-
-                    <span>
-                        Contatto personale
-                    </span>
 
                 </div>
 
 
 
-                <a
-                    href="#"
-                    id="downloadVcard"
-                    class="contact-download"
+                <input
+                    type="text"
+                    placeholder="Oggetto"
                 >
-                    SCARICA CONTATTO
-                    <span>↓</span>
-                </a>
 
 
-                <p class="contact-card-note">
 
-                    Il contatto può essere salvato nella rubrica
-                    del telefono o importato in Outlook.
+                <textarea
+                    placeholder="Messaggio"
+                    required
+                ></textarea>
 
-                </p>
 
 
-            </div>
+                <button type="submit">
+                    INVIA MESSAGGIO
+                </button>
+
+
+
+                <p
+                    id="formMessage"
+                    class="form-message"
+                ></p>
+
+
+            </form>
 
 
         </div>
@@ -300,7 +308,12 @@
 
 
 
+<!-- =========================
+     FOOTER
+========================== -->
+
 <footer>
+
 
     <span>
         © 2026 Alberto Curletti. Tutti i diritti riservati.
@@ -309,6 +322,9 @@
 
     <div class="footer-links">
 
+
+        <!-- LINKEDIN -->
+
         <a
             href="https://it.linkedin.com/in/curlettialberto"
             target="_blank"
@@ -316,27 +332,36 @@
             aria-label="LinkedIn"
             class="footer-social linkedin-footer"
         >
+
             in
+
         </a>
 
+
+
+        <!-- X -->
 
         <a
             href="#"
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label="X"
             class="footer-social x-footer"
         >
+
             𝕏
+
         </a>
 
+
     </div>
+
 
 </footer>
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-
-<script src="../JS/script.js"></script>
+<script src="../HTML/script.js"></script>
 
 
 </body>
