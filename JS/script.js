@@ -43,6 +43,15 @@ const attestati = [
    {
         logo: '<img src="../../IMMAGINI/YouTube_logo.svg.webp" alt="Google">',
         logoClass: "certificate-logo",
+        titolo: "Certificazione per la gestione dei diritti musicali di YouTube",
+        ente: "Google",
+        anno: "2026",
+        link: "https://drive.google.com/file/d/1oSwjKKBn6s0EhQuz072DyhrNY0JXN3b7/view?usp=drive_link"
+    },
+   
+   {
+        logo: '<img src="../../IMMAGINI/YouTube_logo.svg.webp" alt="Google">',
+        logoClass: "certificate-logo",
         titolo: "Certificazione YouTube Music",
         ente: "Google",
         anno: "2026",
@@ -199,6 +208,9 @@ function translateCertificateTitle(title) {
 
         "Attestati Coursera":
             "Coursera Certificates",
+
+       "Certificazione per la gestione dei diritti musicali di YouTube":
+            "YouTube Music Rights Management Certification",
 
        "Certificazione YouTube Music":
             "YouTube Music Certification",
